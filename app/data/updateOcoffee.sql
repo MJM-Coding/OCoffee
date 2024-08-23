@@ -1,6 +1,3 @@
--- Supprimer la table si elle existe
-DROP TABLE IF EXISTS ocoffee;
-
 -- Créer la table ocoffee avec les colonnes supplémentaires
 CREATE TABLE ocoffee (
     id SERIAL PRIMARY KEY,

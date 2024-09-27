@@ -126,7 +126,7 @@ body {
   padding: 0 0.5rem;
 }
 
-/* bouton ajouter au panier */
+/* bouton retour au catalogue */
 #product_return {
   margin-top: 1.2rem;
   text-decoration: none;
@@ -138,6 +138,12 @@ body {
   margin: 1rem 0;
   font-weight: bold;
 }
+
+/*souligne le lien au survol*/
+#product_return:hover {
+  text-decoration: underline;
+}
+
 /* <------------RESPONSIVE 1280px -----------> */
 
 @media screen and (max-width: 1280px) {
@@ -157,11 +163,17 @@ body {
     flex-direction: column;
     width: 100vw;
     height: auto;
+    padding: 0 auto;
+
+    img {
+      height: 40vh;
+      width: auto;
+    }
   }
   /* recentre le produit sur petit ecran */
   .oneProduct {
-    margin: 3rem;
-    width: 70vw;
+    margin: 1rem;
+    width: 80vw;
     height: auto;
   }
   /* ameliore la photo d'illustration sur petit ecran */

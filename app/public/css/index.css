@@ -37,6 +37,8 @@ body {
   }
 }
 
+
+
 /* Styles pour la partie présentaiton DROITE */
 .presentation_right {
   width: 50vw;
@@ -64,7 +66,15 @@ body {
   display: flex;
   justify-content: center;
   font-weight: bold;
+  
 }
+
+/*souligne le lien Voir le catalogue au survol*/
+#presentation_description__link:hover {
+  text-decoration: underline;
+}
+
+
 
 /* Styles pour le titre h2 DECOUVREZ NOS NOUVEAUTES*/
 #new_product_title {
@@ -85,6 +95,7 @@ body {
   justify-content: space-evenly;
   margin-bottom: 1rem;
 }
+
 /* Styles pour le titre h3 de chaque article */
 #new_product_subtitle {
   position: absolute;
@@ -152,7 +163,14 @@ p {
   padding: 0.2rem 1rem;
   margin: 1rem;
   font-size: 1.2rem;
+  
 }
+
+/*souligne les liens découvrir au survol*/
+a:hover {
+  text-decoration: underline;
+}
+
 /* <------------RESPONSIVE 1280px -----------> */
 
 @media screen and (max-width: 1280px) {
@@ -201,6 +219,7 @@ p {
 
   /* Style des nouveautés produits  */
   .news_product {
+    
     padding: 0 1rem;
     display: flex;
     gap: 0.5rem;
@@ -211,7 +230,32 @@ p {
 
   /* Style des détails des nouveaux produits  */
   .news_product_details {
-    width: 60vw;
+    z-index: 10; /* titre H3 en dessous du burger menu*/
+    width: 80vw;
     height: auto;
   }
+  /* Styles pour le titre h3 de chaque article */
+#new_product_subtitle {
+  padding: 0 0.5rem 0 0.5rem;
+  font-size: 1.2rem;
+  
+}
+/* Styles pour le lien VOIR LE CATALOGUE*/
+#presentation_description__link {
+  font-size: 1.5rem;
+  text-decoration: none;
+  text-align: center;
+  margin: 1rem auto;
+  padding: 0 1rem;
+  background-color: var(--liens);
+  color: white;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  font-weight: bold;
+   
+}
+
+
+
 }

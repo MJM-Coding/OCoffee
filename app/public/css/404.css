@@ -27,23 +27,28 @@ img {
   flex-direction: column;
 }
 
+
+/*erreur 404*/
 h1 {
   font-size: 5rem;
   color: white;
   margin-bottom: 0.5em;
 }
 
+/*page non trouvée*/
 h2 {
   font-size: 4rem;
   color: #4c3629;
   margin-bottom: 1em;
 }
 
+/*la page que vous cherchez n'existe pas ou a été déplacée + retour page accueil*/
 p {
   font-size: 1.1em;
   margin-bottom: 1.5em;
 }
 
+/*la page que vous cherchez n'existe pas ou a été déplacée */
 #text {
   margin-bottom: 5rem;
 }
@@ -67,17 +72,39 @@ a:hover {
 
 @media screen and (max-width: 768px) {
   .global {
+    height: 100vh;
     flex-direction: column;
   }
 
   img {
     width: 80vw;
+
+  }
+/*erreur 404*/
+h1 {
+  font-size: 2rem;
+  
+}
+
+  /*page non trouvée*/
+h2{
+  font-size: 1.5rem;
+}
+
+/*la page que vous cherchez n'existe pas ou a été déplacée */
+  #text {
+    margin-bottom: 2rem;
   }
 
-  .error {
-    flex-direction: column-reverse;
-  }
-  #text {
-    margin-bottom: 1rem;
+  /*tout sauf image*/
+.error{
+  justify-content: flex-start;
+  
+}
+
+
+  a{
+    font-size: 1rem;
+ 
   }
 }

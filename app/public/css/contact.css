@@ -10,7 +10,7 @@ body {
   font-family: "Arial", sans-serif;
   background-color: #c5aa94;
   color: #4b3832;
-  margin: 0;
+  margin-top: 0;
   padding: 0;
 }
 
@@ -18,7 +18,7 @@ body {
 .container {
   display: flex; /* aligne les sections côte à côte */
   justify-content: space-between;
-  padding: 1.3rem;
+  padding: 1em;
   max-width: 70vw;
   margin: 0 auto; /* Centre le conteneur horizontalement */
 }
@@ -139,6 +139,7 @@ button[type="submit"]:hover {
 @media (max-width: 768px) {
   .container {
     flex-direction: column;
+    max-width: 100vw;
   }
 
   .form_info,
@@ -146,4 +147,16 @@ button[type="submit"]:hover {
     width: 100%; /* Largeur totale pour les deux sections */
     margin-bottom: 2rem; /* Espace entre les sections */
   }
+
+  /*style de la mini map*/
+.map-container iframe {
+  height: 10rem;
+
+}
+
+/* Style pour le titre du formulaire CONTACTEZ NOUS */
+.form_container h3 {
+margin:0 auto;
+}
+
 }

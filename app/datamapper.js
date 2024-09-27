@@ -4,7 +4,7 @@ const client = require('./client');
 const dataMapper = {
 
     // --------------------------------------
-    //méthode permettant de récupérer 3 produits aléatoirement A REVOIR
+    //méthode permettant de récupérer 3 produits aléatoirement 
     // --------------------------------------
     getNews: async () => {
         const sql = "SELECT * FROM ocoffee ORDER BY RANDOM () LIMIT 3";
